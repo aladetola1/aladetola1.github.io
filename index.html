@@ -13,6 +13,8 @@
   <title>Olaoluwa Demola Aladetola, Ph.D. | Robotique & Automatique</title>
 
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/09/05/09/20260905091832-1AUNVZLP.js" defer></script>
 </head>
 
 <body>
@@ -1145,8 +1147,37 @@
     Site réalisé avec GitHub Pages.
   </p>
 </footer>
+<!-- ODA AI Research Assistant Launcher -->
+<button id="oda-ai-launcher" class="oda-ai-launcher" type="button">
 
+  <img
+    src="assets/images/profile/profile.png"
+    alt="Dr Olaoluwa Aladetola"
+    class="oda-ai-avatar"
+  >
+
+  <span class="oda-ai-launcher-text">
+    <strong>
+      Discutez avec l’assistant IA<br>
+      du Dr Aladetola
+    </strong>
+    <small>Recherche · Collaboration · Enseignement</small>
+  </span>
+
+  <span class="oda-ai-arrow" aria-hidden="true">→</span>
+
+</button>
 <script src="script.js"></script>
+
+<script>
+  window.botpress.on('webchat:initialized', async () => {
+    await window.botpress.updateUser({
+      data: {
+        websiteLanguage: 'fr'
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
