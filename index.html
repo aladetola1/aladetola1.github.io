@@ -60,6 +60,138 @@
 
 <main>
 
+<!-- =====================================================
+     ROBOTICS WELCOME STRIP
+     Approach → Grasp/Lift → Place/Release
+     ===================================================== -->
+
+<div
+  id="robotics-welcome-strip"
+  style="
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    margin: 14px auto 10px !important;
+    padding: 0 !important;
+  "
+>
+
+  <!-- 1. APPROACH -->
+  <video
+    id="robot-demo-1"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-label="Robot approaching an object"
+    style="
+      display: block !important;
+      width: 155px !important;
+      min-width: 155px !important;
+      max-width: 155px !important;
+      height: 87px !important;
+      min-height: 87px !important;
+      max-height: 87px !important;
+      object-fit: cover !important;
+      border-radius: 8px !important;
+    "
+  >
+    <source
+      src="assets/videos/rgmp/rgmp_mug_grasp_web.mp4"
+      type="video/mp4"
+    >
+  </video>
+
+
+  <!-- 2. GRASP / LIFT -->
+  <video
+    id="robot-demo-2"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-label="Robot grasping and lifting an object"
+    style="
+      display: block !important;
+      width: 155px !important;
+      min-width: 155px !important;
+      max-width: 155px !important;
+      height: 87px !important;
+      min-height: 87px !important;
+      max-height: 87px !important;
+      object-fit: cover !important;
+      border-radius: 8px !important;
+    "
+  >
+    <source
+      src="assets/videos/rgmp/rgmp_mug_grasp_web.mp4"
+      type="video/mp4"
+    >
+  </video>
+
+
+  <!-- 3. PLACE / RELEASE -->
+  <video
+    id="robot-demo-3"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-label="Robot placing and releasing an object"
+    style="
+      display: block !important;
+      width: 155px !important;
+      min-width: 155px !important;
+      max-width: 155px !important;
+      height: 87px !important;
+      min-height: 87px !important;
+      max-height: 87px !important;
+      object-fit: cover !important;
+      border-radius: 8px !important;
+    "
+  >
+    <source
+      src="assets/videos/rgmp/rgmp_mug_grasp_web.mp4"
+      type="video/mp4"
+    >
+  </video>
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const video1 = document.getElementById("robot-demo-1");
+    const video2 = document.getElementById("robot-demo-2");
+    const video3 = document.getElementById("robot-demo-3");
+
+    function startVideoAt(video, startTime) {
+      video.addEventListener("loadedmetadata", function () {
+        if (video.duration > startTime) {
+          video.currentTime = startTime;
+        }
+
+        video.play().catch(function () {
+          /* Autoplay may be handled by the browser */
+        });
+      }, { once: true });
+    }
+
+    /* Same grasp cycle, three different phases */
+    startVideoAt(video1, 0.0);  // Approach
+    startVideoAt(video2, 2.0);  // Grasp / lift
+    startVideoAt(video3, 4.0);  // Place / release
+
+  });
+</script>
+
+</div>
+
 <section id="home" class="hero">
 
   <div class="hero-copy">
@@ -160,6 +292,7 @@
       <strong>Attaché Temporaire d'Enseignement et de Recherche (ATER)</strong>
       <span>Nantes Université · Enseignement et recherche universitaires</span>
     </div>
+ 
 
   </div>
 
