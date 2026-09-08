@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>RGMP | Grasp-Aware Robotic Placement</title>
+
+  <meta
+    name="description"
+    content="Simulation-based visualization of grasp-aware robotic placement using a Robot-Independent Geometric Manipulation Proxy and Quality-Diversity optimization."
+  >
+
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aladetola-robotics-automation.fr/rgmp-simulation.html">
+  <meta property="og:title" content="RGMP | Grasp-Aware Robotic Placement">
+  <meta property="og:description" content="Simulation-based visualization of grasp-aware robotic placement using a Robot-Independent Geometric Manipulation Proxy and Quality-Diversity optimization.">
+  <meta property="og:image" content="https://aladetola-robotics-automation.fr/assets/images/profile/profile.png">
+  <meta property="og:image:alt" content="Dr. Olaoluwa Demola Aladetola">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RGMP | Grasp-Aware Robotic Placement">
+  <meta name="twitter:description" content="Simulation-based visualization of grasp-aware robotic placement using RGMP and Quality-Diversity optimization.">
+  <meta name="twitter:image" content="https://aladetola-robotics-automation.fr/assets/images/profile/profile.png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #eef4ff;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      width: 100%;
+      padding: 18px 7%;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .back-link {
+      color: #64d9d1;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .content {
+      width: min(1100px, 88%);
+      margin: 60px auto 80px;
+    }
+
+    .eyebrow {
+      color: #58d7d0;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.05;
+      max-width: 850px;
+    }
+
+    .subtitle {
+      margin-top: 22px;
+      max-width: 820px;
+      color: #aebbd0;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    .video-card {
+      margin-top: 42px;
+      background: #0c1728;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .video-card video {
+      width: 100%;
+      display: block;
+      background: #000;
+    }
+
+    .video-info {
+      padding: 24px 26px 28px;
+    }
+
+    .video-info h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+    }
+
+    .video-info p {
+      margin: 0;
+      color: #aebbd0;
+      line-height: 1.65;
+    }
+
+    .research-note {
+      margin-top: 28px;
+      padding: 22px 24px;
+      border-left: 3px solid #58d7d0;
+      background: rgba(255,255,255,0.025);
+      color: #b8c4d6;
+      line-height: 1.65;
+    }
+
+    .research-note strong {
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 24px 7%;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: #7f8da3;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 700px) {
+      .topbar {
+        padding: 16px 5%;
+      }
+
+      .content {
+        width: 90%;
+        margin-top: 40px;
+      }
+
+      .video-info {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <header class="topbar">
+    <a class="brand" href="index.html">ODA Research</a>
+    <a class="back-link" href="index.html">Back to research portfolio</a>
+  </header>
+
+  <main class="content">
+
+    <div class="eyebrow">
+      Robotics · Manipulation · Quality-Diversity
+    </div>
+
+    <h1>
+      From Stable Placement to Grasp-Aware Placement
+    </h1>
+
+    <p class="subtitle">
+      A simulation-based visualization of grasp-aware robotic placement using
+      a Robot-Independent Geometric Manipulation Proxy (RGMP) within a
+      Quality-Diversity framework.
+    </p>
+
+    <section class="video-card">
+
+      <video autoplay muted loop playsinline controls preload="metadata">
+        <source
+          src="assets/videos/rgmp/rgmp_mug_grasp_web.mp4"
+          type="video/mp4"
+        >
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="video-info">
+
+        <h2>
+          RGMP robotic placement simulation
+        </h2>
+
+        <p>
+          This PyBullet simulation visualization illustrates a robotic
+          manipulation sequence associated with the RGMP research framework,
+          where stable object placements are evaluated according to geometric
+          grasp-friendliness for subsequent manipulation.
+        </p>
+
+      </div>
+
+    </section>
+
+    <div class="research-note">
+      <strong>Research context:</strong>
+      This work was conducted at Sorbonne Université – ISIR within the
+      ASIMOV team. The research combines geometric modeling, robotic
+      simulation, Quality-Diversity optimization, and experimental validation.
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Olaoluwa Demola Aladetola · ODA Research
+  </footer>
+
+</div>
+
+</body>
+</html>
